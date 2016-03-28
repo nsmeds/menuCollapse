@@ -1,0 +1,126 @@
+/******** Base Styles ********/
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  margin: 2% auto 1% auto;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #323232;
+  font-size: 1.8em;
+}
+
+h1, 
+h2 {
+  margin: 0 3% 1% 3%;
+}
+
+h2 {
+  color: #595959;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 1em;
+  text-transform: uppercase;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.5;
+}
+#cssmenu {
+  width: 80%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 3px;
+  box-shadow: 0 0 5px hsla(0,0%,50%,0.6);
+  margin: 0 auto;
+}
+#cssmenu > ul > li {
+  margin: 0 0 2px 0;
+}
+#cssmenu > ul > li:last-child {
+  margin: 0;
+}
+#cssmenu > ul > li > a {
+  font-size: 18px;
+  display: block;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #000;
+  background: #565656;
+  background: linear-gradient(#565656 0%, #323232 100%);
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+#cssmenu > ul > li > a > span {
+  display: block;
+  border: 1px solid #666666;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+  background: hsla(150,100%,50%,1);
+  background: linear-gradient(hsla(150,50%,50%,1) 0%, hsla(150,100%,50%,1) 100%);
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  border: 1px solid hsla(150,50%,50%,1);
+}
+#cssmenu > ul > li.active > a span {
+  border: 1px solid hsla(150,100%,50%,1);
+}
+#cssmenu > ul > li.has-sub > a span {
+  background: url(img/plus.svg) no-repeat right 3% top 25%;
+  background-size: 1em;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(img/minus.svg) no-repeat right 3% top 25%;
+  background-size: 1em 1em;
+}
+
+svg {
+  fill: white;
+}
+
+/******** Sub menu ********/
+#cssmenu ul ul {
+  padding: 5px 12px;
+  display: none;
+}
+#cssmenu ul ul li {
+  padding: 3px 0;
+}
+#cssmenu ul ul a {
+  display: block;
+  color: #595959;
+  font-size: 15px;
+  font-weight: bold;
+}
+#cssmenu ul ul a:hover {
+  color: hsla(150,100%,50%,1);
+}
