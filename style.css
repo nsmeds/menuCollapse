@@ -43,7 +43,7 @@ h2 {
   text-transform: uppercase;
   position: relative;
 }
-#cssmenu a {
+#cssmenu a  {
   line-height: 1.5;
 }
 #cssmenu {
@@ -101,6 +101,11 @@ h2 {
 #cssmenu > ul > li.has-sub.active > a span {
   background: url(img/minus.svg) no-repeat right 3% top 25%;
   background-size: 1em 1em;
+}
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
 }
 
 svg {
